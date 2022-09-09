@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #141c25;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+#main-box{
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 20px;
+}
+#input{
+    width: 65%;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 15px;
+    border:1px solid grey;
+    border-radius: 10px;
+    outline: none;
+}
+#input:focus{
+    border:2px solid grey;
+}
+.addlist{
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #0e978c;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.tasks{
+    padding: 0 20px;
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.td-cont{
+    padding: 0  ;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.td-text{
+ width: 60%;
+ padding: 10px;
+ border-radius: 7px;
+ display: inline-block;
+ border: 1px solid gray;
+ font-size: 20px;
+}
+.sele{
+    pointer-events: none;
+}
+.td-text::placeholder{
+    color: black;
+}
+.delete{
+    margin-left: 15px;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: #0e978c;
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.completed{
+    opacity: 0.8;
+    text-decoration: line-through;
+}
+
+.complete{
+    opacity: 0;
+}
+
+.edit{
+    margin-left: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #0e978c;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.save{
+    margin-left: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #0e978c;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    h1{
+        margin-bottom: 25px;
+    }
+    #main-box{
+        margin: 0 auto;
+        width: 65%;
+        justify-content:space-evenly;
+        padding: 18px 18px;
+    }
+    #input{
+        width: 70%;
+        height: 40px;
+        padding-left: 12px;
+    }
+    #input:focus{
+        border:2px solid grey;
+    }
+    .addlist{
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .tasks{
+        padding: 0 18px;
+        margin-top: 25px;
+        width: 65%;
+        border-radius: 20px;
+        background-color: #fff;
+    }
+    
+    .td-cont{
+        padding: 0 ;
+        margin: 10px 0;
+    }
+    .td-text{
+     font-size: 18px;
+     width: 65%;
+     padding: 8px;
+     border-radius: 8px;
+     
+    }
+    .td-text::placeholder{
+        color: black;
+    }
+    .delete{
+        margin-left: 12px;
+        padding: 8px 15px;
+        font-size: 22px;
+    }
+    .edit{
+        margin-left: 12px;
+        padding: 11px;
+        font-size: 20px;
+        font-size: 17px;
+    }
+    .save{
+        margin-left: 12px;
+        padding: 11px 7px;
+        font-size: 17px;
+    }
+  }
+
+ @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    #main-box{
+        width: 75%;
+        padding: 15px;
+    }
+    #input{
+        height: 35px;
+        padding-left: 10px;
+    }
+    .addlist{
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    .tasks{
+        padding: 0 15px;
+        margin-top: 20px;
+        width: 75%;
+        border-radius: 18px;
+    }
+    
+    .td-cont{
+        padding: 0 ;
+        margin: 6px 0;
+    }
+    .td-text{  
+     padding: 6px;
+    }
+    
+    .delete{
+        margin-left: 10px;
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+    .edit{
+        margin-left: 10px;
+        padding: 9px;
+        font-size: 16px;
+    }
+    .save{
+        margin-left: 10px;
+        padding: 9.5px 6.5px;
+        font-size: 15px;
+    }
+    
+  }
+ @media only screen and (max-width: 480px) {
+    #main-box{
+        width: 80%;
+        padding: 10px;
+    }
+    #input{
+        height: 30px;
+        font-size: 18px;
+        padding-left: 8px;
+    }
+    .addlist{
+        padding: 7px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .tasks{
+        padding: 0 10px;
+        margin-top: 20px;
+        width: 80%;
+        border-radius: 18px;
+    }
+    
+    .td-cont{
+        padding: 0 ;
+        margin: 4px 0;
+    }
+
+    .td-text{  
+     padding: 5px;
+     font-size: 16px;
+    }
+    
+    .delete{
+        margin-left: 8px;
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+    .edit{
+        margin-left: 8px;
+        padding: 6px;
+        font-size: 16px;
+    }
+    .save{
+        margin-left: 8px;
+        padding: 6.5px 3.5px;
+        font-size: 15px;
+    }
+    
+  }
